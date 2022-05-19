@@ -1,0 +1,42 @@
+{
+  "name": "duckling",
+  "version": "0.1.0",
+  "description": "🦆 A command line to rubber duck with",
+  "main": "./lib/index.js",
+  "bin": {
+    "pizza": "./lib/index.js"
+  },
+  "scripts": {
+    "start": "npm run build & nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "start:windows": "nodemon --watch 'src/**/*.ts' --exec \"npx ts-node\" src/index.ts",
+    "create": "npm run build && npm run test",
+    "build": "tsc -p .",
+    "local": "sudo npm i -g && pizza",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thijsrijkers/duckling.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thijsrijkers/duckling/issues"
+  },
+  "homepage": "https://github.com/thijsrijkers/duckling#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^9.2.0",
+    "figlet": "^1.5.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
