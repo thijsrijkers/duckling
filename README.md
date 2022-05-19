@@ -1,11 +1,11 @@
-## duckling
-
 <div align="center">
+  
+  ## duckling
+  
   <img src="https://media.giphy.com/media/4yOvWt3HrWw0INTFxj/giphy.gif" width="480" height="234">
   
   🦆 A command line to rubber duck with
 </div>
-<br>
 
 ## Use
 You need to have to following:
