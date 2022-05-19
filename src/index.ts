@@ -5,7 +5,7 @@ const figlet = require('figlet');
 const program = require('commander');
 let readline = require('readline');
 const clear = require('clear');
-import { duck, getRandomDuckQuote } from './duck';
+import { duck } from './duck';
 
 clear();
 
